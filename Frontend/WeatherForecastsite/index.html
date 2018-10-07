@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <title>Weather Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="ajax.js"></script>
+  
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+ 
+  </head>
+  <body>
+  
+<br style="line-height:50px;"/>
+
+<div class="container">
+  <h2>TURKEY WEATHER FORECAST</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#home">Home Page</a></li>
+    <li><a href="#menu1">Istanbul</a></li>
+    <li><a href="#menu2">Ankara</a></li>
+    <li><a href="#menu3">Izmir</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <p></p>
+      <p>Choose any city to view 3-day weather forecasts in Turkey.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <p>Weather in Istanbul, Turkey</p>
+	  <div class="container"> 	  
+  <table class="table table-condensed">
+    <thead>
+
+      <tr>
+        <th></th>
+        <th>TODAY</th>
+        <th>TOMORROW</th>
+		<th>NEXT DAY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	    <td>MERKEZ</td>
+       <td><h4 id="data1"/></td>
+       <td><h4 id="data2"/></td>
+       <td><h4 id="data3"/></td>
+      </tr>
+      <tr>
+	    <td>ARNAVUTKOY</td>
+       <td><h4 id="data4"/></td>
+       <td><h4 id="data5"/></td>
+       <td><h4 id="data6"/></td>
+      </tr>
+      <tr>
+	    <td>ATASEHIR</td>
+        <td><h4 id="data7"/></td>
+        <td><h4 id="data8"/></td>
+        <td><h4 id="data9"/></td>
+      </tr>
+	  <tr>
+	    <td>AVCILAR</td>
+       <td><h4 id="data10"/></td>
+       <td><h4 id="data11"/></td>
+       <td><h4 id="data12"/></td>
+      </tr>
+	  <tr>
+	    <td>BASAKSEHIR</td>
+        <td><h4 id="data13"/></td>
+        <td><h4 id="data14"/></td>
+        <td><h4 id="data15"/></td>
+      </tr>
+	  <tr>
+	    <td>KADIKOY</td>
+        <td><h4 id="data16"/></td>
+       <td><h4 id="data17"/></td>
+        <td><h4 id="data18"/></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	  
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <p>Weather in Ankara, Turkey</p>
+      <div class="container">        
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+	  
+        <th></th>
+        <th>TODAY</th>
+        <th>TOMORROW</th>
+		<th>NEXT DAY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	    <td>MERKEZ</td>
+       <td><h4 id="data19"/></td>
+       <td><h4 id="data20"/></td>
+       <td><h4 id="data21"/></td>
+      </tr>
+      <tr>
+	    <td>YENIMAHALLE</td>
+       <td><h4 id="data22"/></td>
+       <td><h4 id="data23"/></td>
+       <td><h4 id="data24"/></td>
+      </tr>
+      <tr>
+	    <td>CANKAYA</td>
+        <td><h4 id="data25"/></td>
+        <td><h4 id="data26"/></td>
+        <td><h4 id="data27"/></td>
+      </tr>
+	  <tr>
+	   <td>GOLBASI</td>
+       <td><h4 id="data28"/></td>
+       <td><h4 id="data29"/></td>
+       <td><h4 id="data30"/></td>
+      </tr>
+	  <tr>
+	    <td>MAMAK</td>
+        <td><h4 id="data31"/></td>
+        <td><h4 id="data32"/></td>
+        <td><h4 id="data33"/></td>
+      </tr>
+	  <tr>
+	   <td>POLATLI</td>
+       <td><h4 id="data34"/></td>
+       <td><h4 id="data35"/></td>
+       <td><h4 id="data36"/></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	
+	</div>
+    <div id="menu3" class="tab-pane fade">
+      <p>Weather in Izmir, Turkey</p>
+     <div class="container">        
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+	  
+        <th></th>
+        <th>TODAY</th>
+        <th>TOMORROW</th>
+		<th>NEXT DAY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	    <td>MERKEZ</td>
+       <td><h4 id="data37"/></td>
+       <td><h4 id="data38"/></td>
+       <td><h4 id="data39"/></td>
+      </tr>
+      <tr>
+	    <td>ALIAGA</td>
+       <td><h4 id="data40"/></td>
+       <td><h4 id="data41"/></td>
+       <td><h4 id="data42"/></td>
+      </tr>
+      <tr>
+	    <td>BALCOVA</td>
+        <td><h4 id="data43"/></td>
+       <td><h4 id="data44"/></td>
+        <td><h4 id="data45"/></td>
+      </tr>
+	  <tr>
+	    <td>BORNOVA</td>
+        <td><h4 id="data46"/></td>
+       <td><h4 id="data47"/></td>
+       <td><h4 id="data48"/></td>
+      </tr>
+	  <tr>
+	    <td>CESME</td>
+        <td><h4 id="data49"/></td>
+        <td><h4 id="data50"/></td>
+        <td><h4 id="data51"/></td>
+      </tr>
+	  <tr>
+	    <td>KARSIYAKA</td>
+        <td><h4 id="data52"/></td>
+        <td><h4 id="data53"/></td>
+        <td><h4 id="data54"/></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+   
+   </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
+ 
+  </body>
+</html>

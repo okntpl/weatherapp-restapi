@@ -1,0 +1,26 @@
+spring:
+  application.name: zuul-server
+
+info.component: zuul-server
+
+
+
+# Microservice Port
+server:
+  port: 8080
+zuul:
+  ignoredServices: '*'
+  routes:
+    one:
+      path: /project1/**
+      serviceId: project1
+    two:
+      path: /project2/**
+      serviceId: project2
+
+
+# Configure this Discovery Server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

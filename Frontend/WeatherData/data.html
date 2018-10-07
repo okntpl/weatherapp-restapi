@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+   
+<div class="container">
+  <h2>UPDATE WEATHER DATA</h2>
+  <p>Select City and District to update the weather</p>
+    <div class="row">
+  <div class="dropdown col-sm-4">
+    <button class="btn btn-default dropdown-toggle" id="city-button" type="button" id="menu1" data-toggle="dropdown">Cities
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" id="city-dropdown" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" city_name="ISTANBUL">ISTANBUL</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" city_name="ANKARA">ANKARA</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" city_name="IZMIR">IZMIR</a></li>
+    </ul>
+  </div>
+	  
+	<div class="dropdown col-sm-4">
+      <button class="btn btn-default dropdown-toggle" type="button" id="district-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Districts
+       <span class="caret"></span></button>
+	  </button>
+      <ul id="districts-dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="menu2">
+      </ul>
+    </div>
+	  </div>
+	<br style="line-height:150px;"/>
+  <div class="row">
+    <div class="col-sm-4">
+		<label>Today</label><br/>
+      <INPUT id="txtNumber1" placeholder="temperature" onkeypress="return isNumberKey(event)"   type="number" name="txtNumber" maxlength="2">  
+    </div>
+    <div class="col-sm-4">
+		<label>Tomorrow</label><br/>
+      <INPUT id="txtNumber2" placeholder="temperature" onkeypress="return isNumberKey(event)"   type="number" name="txtNumber" maxlength="2">  
+    </div>
+    <div class="col-sm-4">
+      <label>Day after tomorrow</label><br/>
+      <INPUT id="txtNumber3" placeholder="temperature" onkeypress="return isNumberKey(event)"   type="number" name="txtNumber" maxlength="2">  
+    </div>
+  </div>
+  <br/>
+	<button id="confirm_btn" class="btn btn-primary btn-lg btn-block" onclick="send_data(document.getElementById('txtNumber1').value,document.getElementById('txtNumber2').value,document.getElementById('txtNumber3').value)" disabled>UPDATE</button>
+</div>
+
+</body>
+</html>

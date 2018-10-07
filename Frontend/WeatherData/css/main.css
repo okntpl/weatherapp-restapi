@@ -1,0 +1,10 @@
+html,
+body{
+	margin:0;
+	font-family: "Roboto", "Open Sans", sans-serif;
+	font-size:25px;
+	color:#37556C;
+	line-height:1;
+	background-image:url("../images/cloud2.jpg")
+	 
+}
